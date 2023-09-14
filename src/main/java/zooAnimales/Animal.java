@@ -22,7 +22,9 @@ public class Animal {
       totalAnimales++;
   }
 
-  public void movimiento() {}
+  public String movimiento() {
+    return "desplazarse";
+  }
 
   public static String totalPorTipo() {
     int numMamiferos = 0;

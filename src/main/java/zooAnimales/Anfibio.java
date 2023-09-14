@@ -16,7 +16,11 @@ public class Anfibio extends Animal {
     }
 
     public void cantidadAnfibios() {}
-    public void movimiento() {}
+
+    public String movimiento() {
+        return "saltar";
+    }
+
     public void crearRana() {}
     public void crearSalamandra() {}
 }

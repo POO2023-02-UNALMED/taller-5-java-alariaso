@@ -16,7 +16,11 @@ public class Reptil extends Animal {
     }
 
     public void cantidadReptiles() {}
-    public void movimiento() {}
+
+    public String movimiento() {
+        return "reptar";
+    }
+
     public void crearIguana() {}
     public void crearSerpiente() {}
 }

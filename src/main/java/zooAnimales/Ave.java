@@ -14,7 +14,11 @@ public class Ave extends Animal {
     }
 
     public void cantidadAves() {}
-    public void movimiento() {}
+
+    public String movimiento() {
+        return "volar";
+    }
+    
     public void crearHalcon() {}
     public void crearAguila() {}
 }
