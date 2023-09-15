@@ -39,6 +39,7 @@ public class Animal {
   }
 
   public String toString() {
+    String zoo = zona.getZoo().getNombre();
       return String.format(
         "Mi nombre es %s, tengo una edad de %d, habito en %s y mi genero es\n" + //
           "%s, la zona en la que me ubico es %s, en el %s",

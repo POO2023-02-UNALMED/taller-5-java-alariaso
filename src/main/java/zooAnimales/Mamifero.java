@@ -34,4 +34,20 @@ public class Mamifero extends Animal {
         leones++;
         return new Mamifero(nombre, edad, "selva", genero, true, 4);
     }
+
+    public boolean getPelaje() {
+        return pelaje;
+    }
+
+    public void setPelaje(boolean pelaje) {
+        this.pelaje = pelaje;
+    }
+
+    public int getPatas() {
+        return patas;
+    }
+
+    public void setPatas(int patas) {
+        this.patas = patas;
+    }
 }
