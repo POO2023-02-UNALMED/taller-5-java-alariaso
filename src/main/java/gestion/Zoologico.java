@@ -19,7 +19,11 @@ public class Zoologico {
   }
 
   public int cantidadTotalAnimales() {
-      return zonas.size();
+    int total = 0;
+    for (Zona zona : zonas) {
+      total += zona.cantidadAnimales();
+    }
+    return total;
   }
   
   public String getNombre() {
