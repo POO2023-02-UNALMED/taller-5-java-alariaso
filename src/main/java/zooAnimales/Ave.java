@@ -19,7 +19,9 @@ public class Ave extends Animal {
         listado.add(this);
     }
 
-    public void cantidadAves() {}
+    public static int cantidadAves() {
+        return listado.size();
+    }
 
     public String movimiento() {
         return "volar";

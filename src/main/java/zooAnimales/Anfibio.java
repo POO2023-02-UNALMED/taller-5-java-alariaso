@@ -21,7 +21,9 @@ public class Anfibio extends Animal {
         listado.add(this);
     }
 
-    public void cantidadAnfibios() {}
+    public static int cantidadAnfibios() {
+        return listado.size();
+    }
 
     public String movimiento() {
         return "saltar";

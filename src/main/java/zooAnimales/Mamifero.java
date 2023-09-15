@@ -21,7 +21,11 @@ public class Mamifero extends Animal {
         listado.add(this);
     }
 
-    public void cantidadMamiferos() {}
+    public static int cantidadMamiferos() {
+        return listado.size();
+    }
+
     public void crearCaballo() {}
+
     public void crearLeon() {}
 }
