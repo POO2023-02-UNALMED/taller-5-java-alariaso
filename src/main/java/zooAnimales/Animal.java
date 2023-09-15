@@ -39,11 +39,15 @@ public class Animal {
   }
 
   public String toString() {
-    String zoo = zona.getZoo().getNombre();
-      return String.format(
-        "Mi nombre es %s, tengo una edad de %d, habito en %s y mi genero es\n" + //
-          "%s, la zona en la que me ubico es %s, en el %s",
-          nombre, edad, habitat, genero, zona, zoo);
+    String s = String.format(
+        "Mi nombre es %s, tengo una edad de %d, habito en %s y mi genero es %s",
+          nombre, edad, habitat, genero);
+    if (zona == null) {
+      return s;
+    }
+    String nombreZona = zona.getNombre();
+    String nombreZoo = zona.getZoo().getNombre();
+    return String.format("%s, la zona en la que me ubico es %s, en el %s", s, nombreZona, nombreZoo);
   }
   
   public String getNombre() {
@@ -77,5 +81,4 @@ public class Animal {
   public void setGenero(String genero) {
     this.genero = genero;
   }
-
 }
